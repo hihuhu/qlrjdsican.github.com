@@ -1,0 +1,66 @@
+.produce_introduce h1{
+		text-align:center;
+		font-weight:20px;
+		color:#6EB175;
+	}
+	 h2{
+		text-align:center;
+		font-size:60px;
+		color:rgba(164, 81, 81, 0.86);
+	}
+	h3{
+		padding:0px 50px;
+		font-size:35px;
+		color:#8E9E22;
+	}
+	p{
+		font-size:25px;
+		color:rgba(116, 37, 37, 0.9);
+		font-family: 'Lucida Console', Monaco, monospace;
+
+	}
+	.p01{
+		text-indent:80px;
+	}
+	.produce_introduce{
+		margin:25px 0px;
+	}
+	.tream_introduce{
+		  margin-top:50px;
+		 
+	}
+	.produce_introduce:active{
+		position:relative;
+		top:-10px;
+	}
+	.produce_introduce:hover{
+		position:relative;
+		top:-10px;
+	}
+	.tream_introduce:active{
+       position:relative;
+       top:10px;
+	}
+	.second_main{
+		background:rgba(212, 141, 49, 0.9);
+	}
+	.second_produce {
+	      padding:50px 0px;
+	}
+	.second_introduce {
+	      padding:50px 0px;
+	}
+	.second_produce_in{
+		padding:30px 200px;
+	}
+	.second_introduce_out {
+	      padding:30px 200px;
+	}
+  .containe{
+  background: #2894FF;
+  }
+
+.arrow{ opacity:1;animation:arrow 3s cubic-bezier(0.5,0,0.1,1) infinite;-webkit-animation:arrow 3s cubic-bezier(0.5,0,0.1,1) infinite;transform:rotate(-90deg);-webkit-transform:rotate(-90deg); position:absolute;bottom:10px;left:50%;margin-left:-30px;width:60px;height:60px;border-radius:100%;-webkit-border-radius:100%;line-height:55px;text-align:center;font-size:20px;color:#fff;border:1px solid #fff;cursor:pointer;}
+    .arrow:hover{ animation-play-state:paused;-webkit-animation-play-state:paused;}
+    @keyframes arrow{ %0,%100{bottom:10px; opacity:1;} 50%{bottom:50px; opacity:.5} }
+    @-webkit-keyframes arrow{ %0,%100{bottom:10px; opacity:1;} 50%{bottom:50px; opacity:.5} }

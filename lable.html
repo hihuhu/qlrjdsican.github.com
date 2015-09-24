@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>I-Life lable</title>
+<link rel="stylesheet" type="text/css" href="css/body.css" />
+<link rel="stylesheet" type="text/css" href="css/style3.css" />
+<link rel="stylesheet" type="text/css" href="css/head.css" />
+<link href="css/css3.css" rel="stylesheet" type="text/css">
+<link href="css/px-video.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<script src="js/px-video.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <header>
+   <h1><span>I-Life</span> Happy &amp Life</h1> 
+    <div class="navigation">
+    <div class="ribbon"> 
+    <a href="second.html"> 
+    <span>我的主页</span> 
+    </a> 
+    <a href="second.html"> 
+    <span>关于</span> 
+    </a> <a href="second.html"> 
+    <span>服务</span> 
+    </a> <a href="thrid.html"> 
+    <span>联系我们</span> 
+    </a> 
+    </div>
+    </div>
+    <h2> 随时随地记录生活 </h2>
+    <div class="support-note">
+      <!-- let's check browser support with modernizr -->
+      <span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+      <span class="no-csstransitions">CSS transitions are not supported in your browser</span> <span class="note-ie">Sorry, only modern browsers.</span> </div>
+  </header>
+  <div class="video">
+  <div class="div4-close"></div>
+  <div id="wrapper">
+  
+   <div class="px-video-container" id="myvid">
+	<div class="px-video-img-captions-container">
+    <video width="640" height="360" poster="media/poster_PayPal_Austin2.jpg" controls>
+
+			<source src="images/53799a8e68f94.mp4" type="video/mp4" />
+			
+
+			<track kind="captions" label="English captions" src="media/captions_PayPal_Austin_en.vtt" srclang="en" default />
+			
+			
+			<div>
+			
+			</div>
+		</video>
+	</div>
+	<div class="px-video-controls"></div>
+</div><!-- end video container -->
+
+
+</div>
+</div>
+  <div class="photo"> 
+
+<div class="container1">
+
+    <div class="box">
+     <div class="div3-close"></div>
+    <img class="pic pic1" src="images/p1.jpg">
+    <img class="pic pic2" src="images/p2.jpg">
+    <img class="pic pic3" src="images/p3.jpg">
+    <img class="pic pic4" src="images/p4.jpg">
+  
+    </div>
+    
+
+</div>
+
+</div> 
+  <section class="main">
+    <div id="sb-container" class="sb-container">
+      <div> <span class="sb-icon icon-cog"></span>
+        <h4><span>设置</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-flight"></span>
+        <h4><span>交通</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-eye"></span>
+        <h4><span>美景</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-install"></span>
+        <h4><span>读书</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-bag"></span>
+        <h4><span>便签</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-globe"></span>
+        <h4><span>地图</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-picture"></span>
+        <h4><span>相册</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-video"></span>
+        <h4><span>视频</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-download"></span>
+        <h4><span>云文档</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-mobile"></span>
+        <h4><span>移动</span></h4>
+      </div>
+      <div> <span class="sb-icon icon-camera"></span>
+        <h4><span>图片</span></h4>
+      </div>
+      <div>
+        <h4><span>life</span></h4>
+        <span class="sb-toggle">Click to open/close</span>
+        <h5><span>&nbsp; &nbsp;&nbsp;   I &hearts; Life</span></h5>
+      </div>
+    </div>
+    <!-- sb-container -->
+    
+  </section>
+</div>  
+
+
+<script type="text/javascript" src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lable.js"></script>
+
+
+<script type="text/javascript">
+			$(function() {
+			
+				$( '#sb-container' ).lable( {
+					
+					// 分开的角度。
+					angleInc	: 15,
+					neighbor	: 15,
+					
+					//默认情况下是关闭的
+					initclosed	: true,
+					// function单击触发事件
+				    // 默认没有
+					closeIdx	: 11
+				} );
+			
+			});
+	$(document).ready(function(){
+    $(".icon-camera").click(function(){ 
+      $(".photo").toggle(1000);
+	   $(".sb-container").toggle(1000,fadeIn(3000));
+	    
+    }); 
+	$(".div3-close").click(function(){ 
+	$(".photo").toggle(1000);
+	$(".sb-container").toggle(1000,fadeIn(3000));
+     
+    });
+});
+$(document).ready(function(){
+    $(".icon-video").click(function(){ 
+      $(".video").toggle(1000);
+	   $(".sb-container").toggle(1000,fadeIn(3000));
+	    
+    }); 
+	$(".div4-close").click(function(){ 
+	$(".video").toggle(1000);
+	$(".sb-container").toggle(1000,fadeIn(3000));
+     
+    });
+});
+
+new InitPxVideo({
+	"videoId": "myvid",
+	"captionsOnDefault": true,
+	"seekInterval": 20,
+	"videoTitle": "PayPal Austin promo",
+	"debug": true
+});
+
+		</script>
+</body>
+</html>
